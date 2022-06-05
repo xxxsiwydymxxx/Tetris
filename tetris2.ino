@@ -90,17 +90,17 @@ void loop() {
         
         
         for(int j=7;j>=0;j--){
-        bool dziura=false;
+        bool gap=false;
            
         for(int i=0;i<16;i++){
-        if(!dziura){ 
+        if(!gap){ 
         if(!XY[i][j]){         
-          dziura=true;
+          gap=true;
         }
         }
         }
           
-        if(!dziura){  
+        if(!gap){  
           for(int i=j;i>0;i--){
           for(int k=0;k<16;k++){  
              XY[k][i]=XY[k][i-1];
